@@ -1,0 +1,17 @@
+@import "tailwindcss";
+#ran1:hover{
+    box-shadow: 0 0 5px rgb(139, 244, 244), 0 0 50px rgb(158, 236, 236) ;
+}
+#ran2{
+    box-shadow: 0 0 5px rgb(139, 244, 244), 0 0 50px rgb(158, 236, 236) ;
+}
+#nikki{
+    font-size:20px;
+}
+#ran3{
+    box-shadow: 0 0 15px rgb(4, 178, 178), 0 0 20px rgb(5, 240, 240) ;
+}
+#nikkil{
+    font-size: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

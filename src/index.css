@@ -1,17 +1,50 @@
 @import "tailwindcss";
-#ran1:hover{
-    box-shadow: 0 0 5px rgb(139, 244, 244), 0 0 50px rgb(158, 236, 236) ;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
 }
-#ran2{
-    box-shadow: 0 0 5px rgb(139, 244, 244), 0 0 50px rgb(158, 236, 236) ;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0b0f19;
+  color: #f8fafc;
+  overflow-x: hidden;
 }
-#nikki{
-    font-size:20px;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
 }
-#ran3{
-    box-shadow: 0 0 15px rgb(4, 178, 178), 0 0 20px rgb(5, 240, 240) ;
+
+/* Reusable Glassmorphism Utility */
+.glass {
+  background: rgba(17, 24, 39, 0.45); /* slightly darker transparent */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(139, 92, 246, 0.15); /* subtle purple border */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
-#nikkil{
-    font-size: 400px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.glass-hover:hover {
+  background: rgba(30, 27, 75, 0.5); /* deep indigo hover */
+  border: 1px solid rgba(139, 92, 246, 0.3); /* slightly brighter purple border */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(139, 92, 246, 0.15); /* purple glow shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom glowing shadows for images and highlights */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4), 0 0 30px rgba(6, 182, 212, 0.2);
+}
+
+.glow-blue {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4), 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+/* Custom Selection */
+::selection {
+  background: rgba(59, 130, 246, 0.5); /* blue-500 */
+  color: white;
 }

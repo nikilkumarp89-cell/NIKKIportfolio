@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 const Component1 = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full min-h-screen bg-[url('/image4.jpg')] bg-no-repeat bg-cover bg-center text-white px-6 py-12">
+    <div className="flex flex-col justify-center items-center w-full min-h-screen bg-[url('/bg.png')] bg-no-repeat bg-cover bg-center text-white px-6 py-12" style={{ backgroundAttachment: 'fixed' }}>
 
  
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">

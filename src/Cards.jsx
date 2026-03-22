@@ -1,24 +1,24 @@
-import React from 'react'
-import { FaRegEnvelope } from "react-icons/fa";
-
+import React from 'react';
 
 const Cards = (nikil) => {
   return (
-   <div className="bg-green-500 shadow rounded-lg p-4 flex items-center w-[200px] justify-between max-w-xs">
-      <div>
-        <a  className="text-sm font-medium text-gray-600 hover:underline flex items-center gap-1">  {nikil.name}
-          
-        </a>
-        <div className="text-3xl font-bold mt-1 relative inline-block">
+    <div className="glass glass-hover p-4 rounded-2xl flex items-center w-full justify-between transition-all duration-300 transform">
+      <div className="flex flex-col">
+        <span className="text-sm font-medium text-gray-400 mb-1 capitalize tracking-wide">
+          {nikil.name}
+        </span>
+        <div className="text-4xl font-bold text-white relative inline-block">
           {nikil.Count}
-          <span className="absolute  h-2 w-2 rounded-full bg-red-500"></span>
+          <span className="absolute -top-1 -right-3 h-2.5 w-2.5 rounded-full bg-fuchsia-500 shadow-[0_0_10px_rgba(217,70,239,0.8)] animate-pulse"></span>
         </div>
       </div>
-      <div className="text-blue-600 bg-blue-100 p-2 rounded-full">{nikil.ico }
+      <div className="text-fuchsia-400 bg-fuchsia-500/10 p-4 rounded-xl shadow-inner border border-fuchsia-500/20">
+        <div className="text-2xl">
+          {nikil.ico}
+        </div>
       </div>
     </div>
-   
   );
-}
+};
 
-export default Cards
+export default Cards;
